@@ -1,0 +1,13 @@
+We are looking for a Python Developer with 2 years of experience.
+
+Required Skills:
+- Python
+- SQL
+- Django
+- REST API
+
+Education:
+B.Sc Computer Science or B.Tech
+
+Location:
+Kochi
