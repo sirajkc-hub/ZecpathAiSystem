@@ -1,1 +1,40 @@
-sirajudheen kerala  91 95673 00820  sirajkc820gmailcom  linkedin  github professional summary computer science graduate with strong skills in machine learning data science and fullstack development python sql django flutter tensorflowcompleted data science internship at soften technologies and built a cnnbased diabetic retinopathy detection system using flask seeking entrylevel data scientist or software developer role skills programming c python sql frameworks django flask flutter machine learning  ai cnn tensorflow opencv scikitlearn ai tools github copilot openai codex cursor ai jupyter notebook data tools pandas numpy matplotlib seaborn power bi excel version control git github soft skills analytical thinking problem solving communication skill work experience soften technologies junior data scientist  082025  012026 performed data preprocessing and visualization using pandas and matplotlib built and evaluated machine learning models for classification tasks assisted in deploying ml models using flask framework projects diabetic retinopathy detection using cnn  022026 developed a convolutional neural network cnn model for fundus image classification applied data augmentation and preprocessing to improve model accuracy integrated model with flask web application for realtime predictions github nss management system amable  032025 built fullstack web application using django and flutter designed and managed mysql database for student activity tracking implemented authentication and rolebased access control certifications digital forensics internship  red team hacker academy  092025 training program in data science  soften technologies  022025  072025 education bsc computer science calicut university  cgpa6483  082022  032025 languages english arabic 
+sirajudheen
+kerala - 91 95673 00820 - sirajkc820gmailcom - linkedin - github
+professional summary
+computer science graduate with strong skills in machine learning data science and full-stack development python sql django
+flutter tensorflowcompleted data science internship at soften technologies and built a cnn-based diabetic retinopathy
+detection system using flask seeking entry-level data scientist or software developer role
+skills
+programming c python sql
+frameworks django flask flutter
+machine learning  ai cnn tensorflow opencv scikit-learn
+ai tools github copilot openai codex cursor ai jupyter notebook
+data tools pandas numpy matplotlib seaborn power bi excel
+version control git github
+soft skills
+analytical thinking problem solving communication skill
+work experience
+soften technologies
+junior data scientist  082025 - 012026
+performed data preprocessing and visualization using pandas and matplotlib
+built and evaluated machine learning models for classification tasks
+assisted in deploying ml models using flask framework
+projects
+diabetic retinopathy detection using cnn  022026
+developed a convolutional neural network cnn model for fundus image classification
+applied data augmentation and preprocessing to improve model accuracy
+integrated model with flask web application for real-time predictions
+github
+nss management system amable  032025
+built full-stack web application using django and flutter
+designed and managed mysql database for student activity tracking
+implemented authentication and role-based access control
+certifications
+digital forensics internship - red team hacker academy  092025
+training program in data science - soften technologies  022025 - 072025
+education
+bsc computer science
+calicut university  cgpa-6483  082022 - 032025
+languages
+english
+arabic

@@ -1,0 +1,50 @@
+{
+    "general": [
+        "SIRAJUDHEEN",
+        "Kerala \u2022 +91 95673 00820 \u2022 sirajkc820@gmail.com \u2022 LinkedIn \u2022 GitHub",
+        "PROFESSIONAL SUMMARY",
+        "Computer Science graduate with strong skills in Machine Learning, Data Science, and Full-Stack Development (Python, SQL, Django,",
+        "Flutter, TensorFlow).Completed Data Science Internship at Soften Technologies and built a CNN-based Diabetic Retinopathy",
+        "Detection system using Flask; seeking entry-level Data Scientist or Software Developer role."
+    ],
+    "skills": [
+        "Programming: C, Python, SQL",
+        "Frameworks: Django, Flask, Flutter",
+        "Machine Learning & AI: CNN, TensorFlow, OpenCV, Scikit-learn",
+        "AI Tools: GitHub Copilot, OpenAI Codex, Cursor AI, Jupyter Notebook",
+        "Data Tools: Pandas, NumPy, Matplotlib, Seaborn, Power BI, Excel",
+        "Version Control: Git, GitHub",
+        "SOFT SKILLS",
+        "Analytical Thinking Problem Solving Communication Skill"
+    ],
+    "experience": [
+        "Soften Technologies",
+        "Junior Data Scientist | 08/2025 - 01/2026",
+        "Performed data preprocessing and visualization using Pandas and Matplotlib.",
+        "Built and evaluated machine learning models for classification tasks.",
+        "Assisted in deploying ML models using Flask framework."
+    ],
+    "projects": [
+        "Diabetic Retinopathy Detection using CNN | 02/2026",
+        "Developed a Convolutional Neural Network (CNN) model for fundus image classification.",
+        "Applied data augmentation and preprocessing to improve model accuracy.",
+        "Integrated model with Flask web application for real-time predictions.",
+        "GitHub",
+        "NSS Management System (Amable) | 03/2025",
+        "Built full-stack web application using Django and Flutter.",
+        "Designed and managed MySQL database for student activity tracking.",
+        "Implemented authentication and role-based access control."
+    ],
+    "certifications": [
+        "Digital Forensics Internship - Red Team Hacker Academy | 09/2025",
+        "Training Program in Data Science - Soften Technologies | 02/2025 - 07/2025"
+    ],
+    "education": [
+        "B.Sc. Computer Science",
+        "Calicut University | CGPA-6.483 | 08/2022 - 03/2025",
+        "LANGUAGES",
+        "English",
+        "Arabic",
+        ""
+    ]
+}
