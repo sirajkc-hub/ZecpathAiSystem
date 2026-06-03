@@ -1,0 +1,27 @@
+{
+    "companies": [
+        "soften technologies"
+    ],
+    "job_titles": [
+        "data scientist",
+        "junior data scientist",
+        "software developer"
+    ],
+    "durations": [
+        [
+            "08/2025",
+            "01/2026"
+        ],
+        [
+            "02/2025",
+            "07/2025"
+        ],
+        [
+            "08/2022",
+            "03/2025"
+        ]
+    ],
+    "total_experience": "5 months",
+    "gaps": "No major gaps detected",
+    "overlap": "No overlapping roles detected"
+}

@@ -30,21 +30,56 @@ with open("outputs/resume_sections.json", "w") as file:
 
 from parsers.skill_extractor import *
 skills = extract_skills(raw_text)
-skills.extend(
-    detect_skill_stack(raw_text)
-)
+skills.extend(detect_skill_stack(raw_text))
 skills = remove_duplicates(skills)
 skill_output = build_skill_output(skills)
 print(skill_output)
 
 import json
-with open(
-    "outputs/skills_output.json",
-    "w"
-) as file:
+with open("outputs/skills_output.json","w") as file:
     json.dump(
         skill_output,
         file,
         indent=4
     )
 
+from parsers.experience_parser import *
+experience_object = build_experience_object(raw_text)
+print(experience_object)
+
+score = relevance_score("junior data scientist","data scientist")
+print(score)
+
+import json
+with open("outputs/experience_output.json","w") as file:
+    json.dump(experience_object,file,indent=4)
+
+from parsers.education_parser import *
+academic_profile = build_academic_profile(raw_text)
+print(academic_profile)
+
+score = education_relevance("computer science","data scientist")
+print(score)
+
+import json
+with open("outputs/academic_profile.json","w") as file:
+    json.dump(academic_profile,file,indent=4)
+
+
+
+from parsers.semantic_matcher import *
+resume_text = raw_text
+jd_text = read_jd("data/sample_jd.txt")
+similarity = semantic_similarity(resume_text,jd_text)
+print(similarity)
+
+skill_score = 0.90
+experience_score = 0.85
+project_score = 0.88
+overall_score = overall_match_score(skill_score,experience_score,project_score)
+print(overall_score)
+
+import json
+match_output = {"similarity_score":similarity,"match_type":classify_match(similarity)}
+with open("outputs/match_output.json","w") as file:
+    json.dump(match_output,file,indent=4)
