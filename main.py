@@ -83,3 +83,25 @@ import json
 match_output = {"similarity_score":similarity,"match_type":classify_match(similarity)}
 with open("outputs/match_output.json","w") as file:
     json.dump(match_output,file,indent=4)
+
+from parsers.ats_scorer import *
+candidate_score = generate_candidate_score()
+print(candidate_score)
+
+ats_output = {
+    "candidate_id": "C001",
+    "job_role": "Data Scientist",
+    "skill_score": 0.90,
+    "experience_score": 0.85,
+    "education_score": 0.90,
+    "semantic_score": 0.88,
+    "final_ats_score": candidate_score
+}
+
+import json
+with open("outputs/ats_score_output.json","w") as file:
+    json.dump(ats_output,file,indent=4)
+
+print("ATS SCORE:", candidate_score)
+print(ats_output)
+

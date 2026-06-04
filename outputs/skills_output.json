@@ -4,20 +4,12 @@
         "confidence": 0.8
     },
     {
-        "skill": "excel",
+        "skill": "flask",
         "confidence": 0.8
     },
     {
-        "skill": "numpy",
-        "confidence": 0.8
-    },
-    {
-        "skill": "tensorflow",
-        "confidence": 0.8
-    },
-    {
-        "skill": "communication",
-        "confidence": 0.8
+        "skill": "sql",
+        "confidence": 0.9
     },
     {
         "skill": "power bi",
@@ -28,15 +20,23 @@
         "confidence": 0.8
     },
     {
-        "skill": "python",
-        "confidence": 0.95
-    },
-    {
-        "skill": "flask",
+        "skill": "excel",
         "confidence": 0.8
     },
     {
-        "skill": "sql",
-        "confidence": 0.9
+        "skill": "communication",
+        "confidence": 0.8
+    },
+    {
+        "skill": "tensorflow",
+        "confidence": 0.8
+    },
+    {
+        "skill": "numpy",
+        "confidence": 0.8
+    },
+    {
+        "skill": "python",
+        "confidence": 0.95
     }
 ]
