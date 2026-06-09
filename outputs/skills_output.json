@@ -1,7 +1,7 @@
 [
     {
-        "skill": "django",
-        "confidence": 0.8
+        "skill": "power bi",
+        "confidence": 0.92
     },
     {
         "skill": "flask",
@@ -12,8 +12,8 @@
         "confidence": 0.9
     },
     {
-        "skill": "power bi",
-        "confidence": 0.92
+        "skill": "tensorflow",
+        "confidence": 0.8
     },
     {
         "skill": "pandas",
@@ -24,11 +24,7 @@
         "confidence": 0.8
     },
     {
-        "skill": "communication",
-        "confidence": 0.8
-    },
-    {
-        "skill": "tensorflow",
+        "skill": "django",
         "confidence": 0.8
     },
     {
@@ -38,5 +34,9 @@
     {
         "skill": "python",
         "confidence": 0.95
+    },
+    {
+        "skill": "communication",
+        "confidence": 0.8
     }
 ]

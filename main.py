@@ -105,3 +105,33 @@ with open("outputs/ats_score_output.json","w") as file:
 print("ATS SCORE:", candidate_score)
 print(ats_output)
 
+from parsers.candidate_ranker import *
+ranked_candidates = rank_candidates(candidates)
+ranked_candidates = shortlist_candidates(ranked_candidates)
+print(ranked_candidates)
+
+top_list = top_candidates(ranked_candidates)
+print(top_list)
+
+import json
+with open("outputs/ranked_candidates.json","w") as file:
+    json.dump(ranked_candidates,file,indent=4)
+
+from parsers.fairness_engine import *
+masked_resume = mask_personal_info(raw_text)
+bias_flags = evaluate_bias(raw_text)
+fair_ats_score = fair_score(candidate_score)
+print(masked_resume)
+print(bias_flags)
+print(fair_ats_score)
+
+fairness_output = {
+    "bias_flags":bias_flags,
+    "original_score":candidate_score,
+    "normalized_score":fair_ats_score
+}
+
+import json
+with open("outputs/fairness_report.json","w") as file:
+    json.dump(fairness_output,file,indent=4)
+

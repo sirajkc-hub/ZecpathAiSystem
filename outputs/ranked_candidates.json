@@ -1,0 +1,26 @@
+[
+    {
+        "candidate_id": "C001",
+        "name": "Siraj",
+        "ats_score": 88.35,
+        "status": "Shortlisted"
+    },
+    {
+        "candidate_id": "C002",
+        "name": "Arjun",
+        "ats_score": 75.2,
+        "status": "Review"
+    },
+    {
+        "candidate_id": "C003",
+        "name": "Rahul",
+        "ats_score": 62.5,
+        "status": "Review"
+    },
+    {
+        "candidate_id": "C004",
+        "name": "Akhil",
+        "ats_score": 45.0,
+        "status": "Rejected"
+    }
+]
