@@ -1,5 +1,3 @@
-# Resume Extraction Workflow
-
 from parsers.pdf_reader import extract_pdf_text
 from utils.text_cleaner import clean_text
 from parsers.section_classifier import detect_sections
