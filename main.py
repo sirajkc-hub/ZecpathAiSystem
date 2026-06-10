@@ -133,3 +133,6 @@ import json
 with open("outputs/fairness_report.json","w") as file:
     json.dump(fairness_output,file,indent=4)
 
+del raw_text
+del cleaned_text
+

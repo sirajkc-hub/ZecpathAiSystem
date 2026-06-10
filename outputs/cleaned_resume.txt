@@ -1,40 +1,40 @@
 sirajudheen
-kerala - 91 95673 00820 - sirajkc820gmailcom - linkedin - github
+kerala   +91 95673 00820   sirajkc820@gmail.com   linkedin   github
 professional summary
-computer science graduate with strong skills in machine learning data science and full-stack development python sql django
-flutter tensorflowcompleted data science internship at soften technologies and built a cnn-based diabetic retinopathy
-detection system using flask seeking entry-level data scientist or software developer role
+computer science graduate with strong skills in machine learning, data science, and full-stack development (python, sql, django,
+flutter, tensorflow).completed data science internship at soften technologies and built a cnn-based diabetic retinopathy
+detection system using flask; seeking entry-level data scientist or software developer role.
 skills
-programming c python sql
-frameworks django flask flutter
-machine learning  ai cnn tensorflow opencv scikit-learn
-ai tools github copilot openai codex cursor ai jupyter notebook
-data tools pandas numpy matplotlib seaborn power bi excel
-version control git github
+programming: c, python, sql
+frameworks: django, flask, flutter
+machine learning & ai: cnn, tensorflow, opencv, scikit-learn
+ai tools: github copilot, openai codex, cursor ai, jupyter notebook
+data tools: pandas, numpy, matplotlib, seaborn, power bi, excel
+version control: git, github
 soft skills
 analytical thinking problem solving communication skill
 work experience
 soften technologies
-junior data scientist  082025 - 012026
-performed data preprocessing and visualization using pandas and matplotlib
-built and evaluated machine learning models for classification tasks
-assisted in deploying ml models using flask framework
+junior data scientist | 08/2025 - 01/2026
+performed data preprocessing and visualization using pandas and matplotlib.
+built and evaluated machine learning models for classification tasks.
+assisted in deploying ml models using flask framework.
 projects
-diabetic retinopathy detection using cnn  022026
-developed a convolutional neural network cnn model for fundus image classification
-applied data augmentation and preprocessing to improve model accuracy
-integrated model with flask web application for real-time predictions
+diabetic retinopathy detection using cnn | 02/2026
+developed a convolutional neural network (cnn) model for fundus image classification.
+applied data augmentation and preprocessing to improve model accuracy.
+integrated model with flask web application for real-time predictions.
 github
-nss management system amable  032025
-built full-stack web application using django and flutter
-designed and managed mysql database for student activity tracking
-implemented authentication and role-based access control
+nss management system (amable) | 03/2025
+built full-stack web application using django and flutter.
+designed and managed mysql database for student activity tracking.
+implemented authentication and role-based access control.
 certifications
-digital forensics internship - red team hacker academy  092025
-training program in data science - soften technologies  022025 - 072025
+digital forensics internship - red team hacker academy | 09/2025
+training program in data science - soften technologies | 02/2025 - 07/2025
 education
-bsc computer science
-calicut university  cgpa-6483  082022 - 032025
+b.sc. computer science
+calicut university | cgpa-6.483 | 08/2022 - 03/2025
 languages
 english
 arabic
