@@ -44,17 +44,7 @@ def explain_score(skill_score,experience_score,education_score,semantic_score):
         "semantic_similarity":semantic_score
     }
 
-def generate_candidate_score():
-    weights = ROLE_WEIGHTS["data scientist"]
-    skill_score = 0.90
-    experience_score = 0.85
-    education_score = 0.90
-    semantic_score = 0.88
-    final_score = calculate_score(
-        skill_score,
-        experience_score,
-        education_score,
-        semantic_score,
-        weights
-    )
+def generate_candidate_score(skill_score,experience_score,education_score,semantic_score,role="data scientist"):
+    weights = ROLE_WEIGHTS.get(role.lower(),DEFAULT_WEIGHTS)
+    final_score = calculate_score(skill_score,experience_score,education_score,semantic_score,weights)
     return final_score

@@ -1,7 +1,5 @@
 {
-    "bias_flags": [
-        "age"
-    ],
-    "original_score": 88.35,
-    "normalized_score": 88.35
+    "bias_flags": [],
+    "original_score": 90.66,
+    "normalized_score": 90.66
 }

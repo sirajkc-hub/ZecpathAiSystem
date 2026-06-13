@@ -2,7 +2,7 @@ from parsers.pdf_reader import extract_pdf_text
 from utils.text_cleaner import clean_text
 from parsers.section_classifier import detect_sections
 
-file_path = "data/SIRAJ RESUME (1).pdf"
+file_path = "data/Experienced_Python_Developer_Resume2.pdf"
 raw_text = extract_pdf_text(file_path)
 cleaned_text = clean_text(raw_text)
 print(cleaned_text)
@@ -45,6 +45,15 @@ from parsers.experience_parser import *
 experience_object = build_experience_object(raw_text)
 print(experience_object)
 
+total_exp = experience_object["total_experience"]
+if "5 months" in total_exp:
+    months = 5
+else:
+    months = 0
+experience_score = min(months / 24, 1)
+
+print("Experience Score:", experience_score)
+
 score = relevance_score("junior data scientist","data scientist")
 print(score)
 
@@ -55,6 +64,11 @@ with open("outputs/experience_output.json","w") as file:
 from parsers.education_parser import *
 academic_profile = build_academic_profile(raw_text)
 print(academic_profile)
+if "computer science" in academic_profile["field"]:
+    education_score = 1.0
+else:
+    education_score = 0.5
+print("Education Score:", education_score)
 
 score = education_relevance("computer science","data scientist")
 print(score)
@@ -69,7 +83,8 @@ from parsers.semantic_matcher import *
 resume_text = raw_text
 jd_text = read_jd("data/sample_jd.txt")
 similarity = semantic_similarity(resume_text,jd_text)
-print(similarity)
+semantic_score = similarity
+print("Semantic Score:", semantic_score)
 
 skill_score = 0.90
 experience_score = 0.85
@@ -83,8 +98,18 @@ with open("outputs/match_output.json","w") as file:
     json.dump(match_output,file,indent=4)
 
 from parsers.ats_scorer import *
-candidate_score = generate_candidate_score()
-print(candidate_score)
+jd_object = build_jd_object(cleaned_jd)
+skill_output = build_skill_output(skills)
+jd_skills = jd_object["skills"]
+resume_skills = [item["skill"]for item in skill_output]
+matched_skills = 0
+for skill in jd_skills:
+    if skill in resume_skills:
+        matched_skills += 1
+skill_score = matched_skills / len(jd_skills)
+print("Skill Score:", skill_score)
+candidate_score = generate_candidate_score(skill_score,experience_score,education_score,semantic_score,"python developer")
+print("ATS SCORE:", candidate_score)
 
 ats_output = {
     "candidate_id": "C001",

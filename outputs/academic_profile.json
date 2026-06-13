@@ -1,26 +1,12 @@
 {
     "degree": [],
     "field": [
-        "computer science",
-        "data science"
+        "computer science"
     ],
-    "institution": [
-        "calicut university"
-    ],
+    "institution": [],
     "graduation_year": [
-        "2025",
-        "2026",
-        "2026",
-        "2025",
-        "2025",
-        "2025",
-        "2025",
-        "2022",
-        "2025"
+        "2023",
+        "2023"
     ],
-    "certifications": [
-        "digital forensics internship",
-        "data science",
-        "power bi"
-    ]
+    "certifications": []
 }

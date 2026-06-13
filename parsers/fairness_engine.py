@@ -24,16 +24,15 @@ def mask_personal_info(text):
         text = text.replace(key,value)
     return text
 
+import re
 BIAS_INDICATORS = ["gender","age","religion","marital status"]
-
 def evaluate_bias(text):
     found = []
     text = text.lower()
     for indicator in BIAS_INDICATORS:
-        if indicator in text:
-            found.append(
-                indicator
-            )
+        pattern = r"\b" + re.escape(indicator) + r"\b"
+        if re.search(pattern, text):
+            found.append(indicator)
     return found
 
 def fair_score(original_score):
