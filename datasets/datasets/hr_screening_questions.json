@@ -1,0 +1,77 @@
+[
+{
+"question_id": "Q001",
+"role": "python developer",
+"category": "INTRODUCTION",
+"question_en": "Can you introduce yourself?",
+"question_ml": "സ്വയം പരിചയപ്പെടുത്താമോ?",
+"answer_type": "text",
+"mandatory": true,
+"importance": 5
+},
+{
+"question_id": "Q002",
+"role": "python developer",
+"category": "SKILLS",
+"question": "How many years of experience do you have in Python?",
+"answer_type": "number",
+"mandatory": true,
+"importance": 5
+},
+{
+"question_id": "Q010",
+"role": "data scientist",
+"category": "SKILLS",
+"question": "Which machine learning algorithms have you used?",
+"answer_type": "text",
+"mandatory": true,
+"importance": 5
+},
+{
+"question_id": "Q020",
+"role": "general",
+"category": "EDUCATION",
+"question_en": "What is your highest qualification?",
+"question_ml": "നിങ്ങളുടെ ഏറ്റവും ഉയർന്ന വിദ്യാഭ്യാസ യോഗ്യത എന്താണ്?",
+"answer_type": "text",
+"mandatory": true,
+"importance": 4
+},
+{
+"question_id": "Q030",
+"role": "general",
+"category": "EXPERIENCE",
+"question": "Describe your most recent role.",
+"answer_type": "text",
+"mandatory": true,
+"importance": 5
+},
+{
+"question_id": "Q040",
+"role": "general",
+"category": "LOCATION",
+"question_en": "Are you willing to relocate to Kochi?",
+"question_ml": "കൊച്ചിയിലേക്ക് താമസം മാറാൻ തയ്യാറാണോ?",
+"answer_type": "yes_no",
+"mandatory": false,
+"importance": 3
+},
+{
+"question_id": "Q050",
+"role": "general",
+"category": "SALARY",
+"question": "What are your salary expectations?",
+"answer_type": "number",
+"mandatory": false,
+"importance": 2
+},
+{
+"question_id": "Q060",
+"role": "general",
+"category": "NOTICE_PERIOD",
+"question": "What is your notice period?",
+"answer_type": "number",
+"mandatory": true,
+"importance": 4
+}
+]
