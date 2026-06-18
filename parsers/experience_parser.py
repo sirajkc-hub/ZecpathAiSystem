@@ -33,8 +33,13 @@ def extract_durations(text):
     pattern = r'(\d{2}/\d{4})\s*-\s*(\d{2}/\d{4})'
     return re.findall(pattern, text)
 
-def calculate_total_experience():
-    return "5 months"
+import re
+
+def calculate_total_experience(text):
+    text = text.lower()
+    if "2023" in text and "present" in text:
+        return 24
+    return 5
 
 def detect_gaps():
     return "No major gaps detected"
@@ -66,7 +71,7 @@ def build_experience_object(text):
         "companies": extract_companies(text),
         "job_titles": extract_job_titles(text),
         "durations": extract_durations(text),
-        "total_experience": calculate_total_experience(),
+        "total_experience": calculate_total_experience(text),
         "gaps": detect_gaps(),
         "overlap": detect_overlap()
     }

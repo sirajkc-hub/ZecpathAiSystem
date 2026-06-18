@@ -99,14 +99,9 @@ def education_relevance(field, target_role):
 
 def build_academic_profile(text):
     return {
-        "degree":
-            extract_degree(text),
-        "field":
-            extract_field(text),
-        "institution":
-            extract_institution(text),
-        "graduation_year":
-            extract_graduation_year(text),
-        "certifications":
-            extract_certifications(text)
+        "degree":extract_degree(text),
+        "field":extract_field(text),
+        "institution":extract_institution(text),
+        "graduation_year":extract_graduation_year(text),
+        "certifications":extract_certifications(text)
     }

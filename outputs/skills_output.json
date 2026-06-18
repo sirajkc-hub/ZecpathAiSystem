@@ -1,14 +1,14 @@
 [
     {
+        "skill": "django",
+        "confidence": 0.8
+    },
+    {
         "skill": "python",
         "confidence": 0.95
     },
     {
         "skill": "sql",
         "confidence": 0.9
-    },
-    {
-        "skill": "django",
-        "confidence": 0.8
     }
 ]

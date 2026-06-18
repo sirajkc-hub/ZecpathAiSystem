@@ -34,24 +34,14 @@ skill_output = build_skill_output(skills)
 print(skill_output)
 
 import json
-with open("outputs/skills_output.json","w") as file:
-    json.dump(
-        skill_output,
-        file,
-        indent=4
-    )
+with open("outputs/skills_output.json","w") as file:json.dump(skill_output,file,indent=4)
 
 from parsers.experience_parser import *
 experience_object = build_experience_object(raw_text)
 print(experience_object)
 
 total_exp = experience_object["total_experience"]
-if "5 months" in total_exp:
-    months = 5
-else:
-    months = 0
-experience_score = min(months / 24, 1)
-
+experience_score = min(total_exp / 24, 1)
 print("Experience Score:", experience_score)
 
 score = relevance_score("junior data scientist","data scientist")
@@ -125,7 +115,6 @@ import json
 with open("outputs/ats_score_output.json","w") as file:
     json.dump(ats_output,file,indent=4)
 
-print("ATS SCORE:", candidate_score)
 print(ats_output)
 
 from parsers.candidate_ranker import *
@@ -160,4 +149,24 @@ with open("outputs/fairness_report.json","w") as file:
 
 del raw_text
 del cleaned_text
+
+from parsers.eligibility_engine import *
+candidate_skills = [item["skill"]for item in skill_output]
+candidate_exp = experience_object["total_experience"] / 12
+role = "python developer"
+
+decision = evaluate_candidate(candidate_score,candidate_skills,candidate_exp,role)
+print(decision)
+
+eligibility_result = {
+    "candidate_id": "C001",
+    "role": role,
+    "ats_score": candidate_score,
+    "decision": decision
+}
+
+import json
+with open("outputs/eligibility_output.json","w") as file:
+    json.dump(eligibility_result,file,indent=4)
+
 
