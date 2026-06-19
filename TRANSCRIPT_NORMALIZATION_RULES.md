@@ -30,3 +30,17 @@ Example:
 
 yrs → years
 exp → experience
+
+## Integration Flow
+
+Voice Input
+↓
+Speech To Text
+↓
+Transcript Cleaner
+↓
+Normalized Transcript
+↓
+AI Screening Engine
+↓
+Candidate Evaluation

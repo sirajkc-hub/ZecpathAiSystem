@@ -1,0 +1,13 @@
+{
+    "accent_tested": [
+        "Indian English",
+        "American English"
+    ],
+
+    "noise_conditions": [
+        "quiet room",
+        "background noise"
+    ],
+
+    "accuracy_score": 0.92
+}
