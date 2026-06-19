@@ -1,0 +1,13 @@
+{
+    "candidate_id": "C001",
+    "job_id": "J001",
+    "interview_round": "HR Screening",
+    "questions": [
+        {
+            "question_id": "Q001",
+            "question": "Can you introduce yourself?",
+            "answer": "I am a Python Developer with 2 years of experience.",
+            "confidence": 0.96
+        }
+    ]
+}

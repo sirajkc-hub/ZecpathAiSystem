@@ -1,0 +1,9 @@
+{
+    "candidate_id": "C001",
+    "job_id": "J001",
+    "question_id": "Q001",
+    "timestamp": "2026-06-20T10:15:30",
+    "speaker": "candidate",
+    "transcript": "I have 2 years of experience in Python development.",
+    "confidence": 0.95
+}
