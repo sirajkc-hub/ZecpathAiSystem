@@ -1,0 +1,13 @@
+{
+    "intent": "skill",
+    "skills": [
+        "python",
+        "django"
+    ],
+    "experience": 2,
+    "availability": "Immediate",
+    "salary": "8 LPA",
+    "off_topic": false,
+    "vague": false
+}
+
