@@ -1,3 +1,6 @@
+from parsers.answer_understanding import detect_off_topic
+from parsers.answer_understanding import detect_vague_answer
+
 SCORING_PARAMETERS = {
     "clarity": 0.25,
     "relevance": 0.30,
@@ -41,12 +44,19 @@ def calculate_question_score(
 def normalize_score(score):
     return min(score, 100)
 
-def build_question_score(answer,off_topic,vague):
+def build_question_score(answer):
+    off_topic = detect_off_topic(answer)
+    vague = detect_vague_answer(answer)
     clarity = score_clarity(answer)
     relevance = score_relevance(off_topic)
     completeness = score_completeness(vague)
     consistency = score_consistency()
-    final_score = calculate_question_score(clarity,relevance,completeness,consistency)
+    final_score = calculate_question_score(
+        clarity,
+        relevance,
+        completeness,
+        consistency
+    )
     return {
         "clarity": clarity,
         "relevance": relevance,
@@ -75,9 +85,5 @@ def explain_score(result):
 sample_answer = """
 I have 2 years of Python and Django experience.
 """
-result = build_question_score(
-    sample_answer,
-    off_topic=False,
-    vague=False
-)
+result = build_question_score(sample_answer)
 print(result)
