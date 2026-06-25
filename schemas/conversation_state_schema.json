@@ -1,0 +1,6 @@
+{
+    "state": "ASK_QUESTION",
+    "next_state": "WAIT_FOR_ANSWER",
+    "retry_count": 0,
+    "conversation_complete": false
+}
