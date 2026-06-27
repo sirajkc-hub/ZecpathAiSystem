@@ -32,14 +32,23 @@ def check_skills(candidate_skills, mandatory_skills):
 def check_experience(candidate_exp,required_exp):
     return candidate_exp >= required_exp
 
-def evaluate_candidate(score,skills,experience,role):
+def evaluate_candidate(score, skills, experience, role, confidence_score=0.0):
     rules = ROLE_RULES[role]
-    score_ok = check_score(score,rules["min_score"])
-    skills_ok = check_skills(skills,rules["mandatory_skills"])
-    exp_ok = check_experience(experience,rules["min_experience"])
-    if score_ok and skills_ok and exp_ok:
-        return "Eligible"
-    if score_ok:
+
+    score_ok = check_score(score, rules["min_score"])
+    skills_ok = check_skills(skills, rules["mandatory_skills"])
+    exp_ok = check_experience(experience, rules["min_experience"])
+
+    if score >= 85 and skills_ok and exp_ok:
+        return "Shortlisted"
+
+    if score >= 65 and score_ok:
         return "Review"
+
+    if score < 65 and confidence_score > 0.90:
+        return "Review"
+
     return "Rejected"
+
+
 

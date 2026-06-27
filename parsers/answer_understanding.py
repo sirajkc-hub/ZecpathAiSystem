@@ -3,6 +3,9 @@ INTENTS = [
     "experience",
     "availability",
     "salary",
+    "education",
+    "project",
+    "leadership",
     "unknown"
 ]
 
@@ -16,6 +19,13 @@ def classify_intent(text):
         return "availability"
     if "salary" in text or "lpa" in text:
         return "salary"
+    if "project" in text:
+        return "project"
+    if "team" in text:
+        return "leadership"
+
+    if "degree" in text:
+        return "education"
     return "unknown"
 
 SKILLS = [

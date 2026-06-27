@@ -1,0 +1,14 @@
+[
+  {
+    "candidate_id": "C001",
+    "human_decision": "Shortlisted",
+    "ai_decision": "Shortlisted",
+    "match": true
+  },
+  {
+    "candidate_id": "C002",
+    "human_decision": "Review",
+    "ai_decision": "Review",
+    "match": true
+  }
+]

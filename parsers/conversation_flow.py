@@ -55,7 +55,5 @@ if __name__ == "__main__":
 
     print(handle_confusion())
 
-    print(follow_up_trigger(
-        "I have worked in Python."
-    ))
+    print(follow_up_trigger("I have worked in Python."))
 
