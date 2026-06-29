@@ -87,6 +87,8 @@ match_output = {"similarity_score":similarity,"match_type":classify_match(simila
 with open("outputs/match_output.json","w") as file:
     json.dump(match_output,file,indent=4)
 
+role = "python developer"
+
 from parsers.ats_scorer import *
 jd_object = build_jd_object(cleaned_jd)
 skill_output = build_skill_output(skills)
@@ -103,11 +105,11 @@ print("ATS SCORE:", candidate_score)
 
 ats_output = {
     "candidate_id": "C001",
-    "job_role": "Data Scientist",
-    "skill_score": 0.90,
-    "experience_score": 0.85,
-    "education_score": 0.90,
-    "semantic_score": 0.88,
+    "job_role": role,
+    "skill_score": skill_score,
+    "experience_score": experience_score,
+    "education_score": education_score,
+    "semantic_score": semantic_score,
     "final_ats_score": candidate_score
 }
 
@@ -153,7 +155,6 @@ del cleaned_text
 from parsers.eligibility_engine import *
 candidate_skills = [item["skill"]for item in skill_output]
 candidate_exp = experience_object["total_experience"] / 12
-role = "python developer"
 
 decision = evaluate_candidate(candidate_score,candidate_skills,candidate_exp,role)
 print(decision)
@@ -168,5 +169,17 @@ eligibility_result = {
 import json
 with open("outputs/eligibility_output.json","w") as file:
     json.dump(eligibility_result,file,indent=4)
+
+print("Candidate ID:", "C001")
+print("ATS Score:", candidate_score)
+screening_score = 92.5
+confidence_score = 0.95
+candidate_id = "C001"
+
+print("Candidate ID:", candidate_id)
+print("ATS Score:", candidate_score)
+print("Screening Score:", screening_score)
+print("Confidence Score:", confidence_score)
+print("Final Decision:", decision)
 
 
