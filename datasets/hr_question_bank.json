@@ -1,0 +1,25 @@
+[
+  {
+    "question_id": "HR001",
+    "category": "SELF_INTRODUCTION",
+    "role": "general",
+    "experience_level": "all",
+    "question": "Can you introduce yourself?"
+  },
+
+  {
+    "question_id": "HR002",
+    "category": "CAREER_GOALS",
+    "role": "general",
+    "experience_level": "fresher",
+    "question": "Where do you see yourself in the next five years?"
+  },
+
+  {
+    "question_id": "HR003",
+    "category": "TEAMWORK_CULTURE_FIT",
+    "role": "general",
+    "experience_level": "experienced",
+    "question": "Tell me about a challenging team situation you handled."
+  }
+]
