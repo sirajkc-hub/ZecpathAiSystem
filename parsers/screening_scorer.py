@@ -82,8 +82,6 @@ def explain_score(result):
         result["question_score"]
     }
 
-sample_answer = """
-I have 2 years of Python and Django experience.
-"""
+sample_answer = """I have 2 years of Python and Django experience."""
 result = build_question_score(sample_answer)
 print(result)

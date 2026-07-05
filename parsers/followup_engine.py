@@ -52,9 +52,7 @@ conversation_state = {
     "followups_used": 0
 }
 
-def decide_followup(
-        answer,
-        confidence_score):
+def decide_followup(answer,confidence_score):
     if is_incomplete(answer):
         return clarification_trigger()
     if is_vague(answer):
@@ -67,8 +65,5 @@ def decide_followup(
 
 if __name__ == "__main__":
     answer = ("I worked with Python.")
-    result = decide_followup(
-        answer,
-        0.95
-    )
+    result = decide_followup(answer,0.95)
     print(result)

@@ -48,12 +48,8 @@ def build_conversation_state(state):
     return {"state": state,"next_state": next_state(state)}
 
 if __name__ == "__main__":
-
     print(build_conversation_state("START"))
-
     print(handle_silence())
-
     print(handle_confusion())
-
     print(follow_up_trigger("I have worked in Python."))
 
