@@ -72,6 +72,8 @@ def communication_strength(hesitation_count,uncertainty):
         score -= 0.2
     return max(score, 0)
 
+
+# DAY 36
 def detect_repeated_words(text):
     words = text.lower().split()
     repeated = []
