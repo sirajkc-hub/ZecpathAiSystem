@@ -1,0 +1,24 @@
+[
+    {
+        "id": "R001",
+        "type": "logical_reasoning",
+        "question": "If all developers are programmers and some programmers are data scientists, can all developers be data scientists?",
+        "ideal_keywords": [
+            "not necessarily",
+            "logical relation",
+            "depends"
+        ]
+    },
+
+    {
+        "id": "R002",
+        "type": "problem_solving",
+        "question": "How would you debug a production issue in a web application?",
+        "ideal_keywords": [
+            "logs",
+            "reproduce",
+            "monitoring",
+            "root cause"
+        ]
+    }
+]

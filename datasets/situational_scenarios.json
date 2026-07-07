@@ -1,0 +1,14 @@
+[
+    {
+        "scenario_id": "S001",
+        "scenario":
+        "A production server crashes during peak traffic hours. What would you do?",
+
+        "expected_points": [
+            "identify issue",
+            "communicate",
+            "rollback",
+            "monitor"
+        ]
+    }
+]
