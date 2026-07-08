@@ -1,0 +1,22 @@
+[
+    {
+        "candidate_id": "C001",
+        "type": "Confident",
+        "manual_score": 92
+    },
+    {
+        "candidate_id": "C002",
+        "type": "Hesitant",
+        "manual_score": 65
+    },
+    {
+        "candidate_id": "C003",
+        "type": "Inexperienced",
+        "manual_score": 55
+    },
+    {
+        "candidate_id": "C004",
+        "type": "Overqualified",
+        "manual_score": 96
+    }
+]
