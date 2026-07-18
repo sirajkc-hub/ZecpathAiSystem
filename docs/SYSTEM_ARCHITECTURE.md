@@ -31,3 +31,43 @@ Conversation Engine
 Final Report Generator
 ↓
 Output
+
+# HR Interview AI Architecture
+
+Resume
+
+↓
+
+Resume Parser
+
+↓
+
+ATS Engine
+
+↓
+
+AI Screening
+
+↓
+
+Interview Engine
+
+↓
+
+Communication Analyzer
+
+↓
+
+Confidence Analyzer
+
+↓
+
+HR Scoring
+
+↓
+
+Unified Scoring
+
+↓
+
+Hiring Recommendation

@@ -1,0 +1,32 @@
+[
+    {
+        "candidate_id": "C001",
+        "name": "Arjun Menon",
+        "role": "Python Developer",
+        "ats_score": 90.66,
+        "screening_score": 92.50,
+        "hr_score": 89.20,
+        "final_score": 90.30,
+        "recommendation": "Hire"
+    },
+    {
+        "candidate_id": "C002",
+        "name": "Rahul Nair",
+        "role": "Python Developer",
+        "ats_score": 74.50,
+        "screening_score": 71.00,
+        "hr_score": 73.20,
+        "final_score": 72.90,
+        "recommendation": "Further Interview"
+    },
+    {
+        "candidate_id": "C003",
+        "name": "Akhil Das",
+        "role": "Python Developer",
+        "ats_score": 55.30,
+        "screening_score": 58.40,
+        "hr_score": 60.00,
+        "final_score": 57.80,
+        "recommendation": "Reject"
+    }
+]

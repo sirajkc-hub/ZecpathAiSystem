@@ -26,3 +26,6 @@ Final ATS Score =
 (Experience × Weight) +
 (Education × Weight) +
 (Semantic × Weight)
+
+
+

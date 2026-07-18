@@ -1,0 +1,26 @@
+{
+    "0-2 Years": {
+        "difficulty": "Basic",
+        "focus": [
+            "Programming Fundamentals",
+            "OOP",
+            "Basic SQL"
+        ]
+    },
+    "3-5 Years": {
+        "difficulty": "Intermediate",
+        "focus": [
+            "System Design Basics",
+            "API Design",
+            "Optimization"
+        ]
+    },
+    "5+ Years": {
+        "difficulty": "Advanced",
+        "focus": [
+            "System Design",
+            "Scalability",
+            "Architecture"
+        ]
+    }
+}

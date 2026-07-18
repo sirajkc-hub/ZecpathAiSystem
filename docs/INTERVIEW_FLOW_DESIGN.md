@@ -1,7 +1,35 @@
+# Interview Flow
+
+Start
+
+↓
+
 Introduction
+
 ↓
-Core HR Questions
+
+Experience Evaluation
+
 ↓
-Role-Based Evaluation
+
+Technical Questions
+
 ↓
-Closing
+
+Scenario Problems
+
+↓
+
+Difficulty Adjustment
+
+↓
+
+Score Calculation
+
+↓
+
+Recommendation
+
+↓
+
+End

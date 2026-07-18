@@ -1,9 +1,9 @@
 {
     "candidate_id": "C001",
-    "job_role": "Data Scientist",
-    "skill_score": 0.9,
+    "job_role": "python developer",
+    "skill_score": 1.0,
     "experience_score": 0.85,
-    "education_score": 0.9,
-    "semantic_score": 0.88,
+    "education_score": 1.0,
+    "semantic_score": 0.6774747371673584,
     "final_ats_score": 90.66
 }
