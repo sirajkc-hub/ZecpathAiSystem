@@ -1,0 +1,9 @@
+{
+    "signals": [
+        "eye_movement",
+        "gaze_stability",
+        "head_movement",
+        "facial_engagement",
+        "attention_pattern"
+    ]
+}

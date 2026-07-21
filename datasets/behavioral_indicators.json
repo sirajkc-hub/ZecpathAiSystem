@@ -1,0 +1,19 @@
+{
+    "focus_level": [
+        "High",
+        "Medium",
+        "Low"
+    ],
+
+    "distraction_frequency": [
+        "Rare",
+        "Occasional",
+        "Frequent"
+    ],
+
+    "nervous_gestures": [
+        "None",
+        "Few",
+        "Many"
+    ]
+}
