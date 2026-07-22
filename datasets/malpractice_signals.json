@@ -1,0 +1,8 @@
+{
+    "signals": [
+        "tab_switching",
+        "screen_focus_loss",
+        "external_voice",
+        "looking_away"
+    ]
+}
