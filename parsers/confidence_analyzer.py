@@ -74,11 +74,12 @@ def communication_strength(hesitation_count,uncertainty):
 
 
 # DAY 36
+IGNORE_WORDS = ["i", "the", "a", "an", "and", "to", "of"]
 def detect_repeated_words(text):
     words = text.lower().split()
     repeated = []
     for word in set(words):
-        if words.count(word) > 2:
+        if word not in IGNORE_WORDS and words.count(word) > 2:
             repeated.append(word)
     return repeated
 

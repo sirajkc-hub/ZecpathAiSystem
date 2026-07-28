@@ -55,3 +55,5 @@ if __name__ == "__main__":
     logical = logical_score(answer)
     clarity = problem_solving_clarity(answer)
     print(build_aptitude_report(logical,clarity))
+
+

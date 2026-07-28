@@ -183,3 +183,462 @@ print("Confidence Score:", confidence_score)
 print("Final Decision:", decision)
 
 
+
+#DAY 33
+from parsers.hr_question_generator import *
+role = "python developer"
+experience = "fresher"
+question = generate_question(
+    role,
+    experience
+)
+print("Role:", role)
+print("Experience:", experience)
+print("Interview Question:", question)
+interview_output = {
+    "candidate_id": "C001",
+    "role": role,
+    "experience": experience,
+    "question": question
+}
+with open("outputs/interview_engine_output.json", "w") as file:
+    json.dump(interview_output, file, indent=4)
+
+
+#DAY 34
+from parsers.followup_engine import *
+candidate_answer = """
+I worked on a resume parser project using Python.
+"""
+confidence_score = 0.95
+followup = decide_followup(
+    candidate_answer,
+    confidence_score
+)
+print("Candidate Answer:")
+print(candidate_answer)
+print("\nConfidence Score:", confidence_score)
+print("\nFollow-up Question:")
+print(followup)
+followup_output = {
+    "candidate_answer": candidate_answer,
+    "confidence_score": confidence_score,
+    "followup_question": followup
+}
+with open("outputs/followup_output.json", "w") as file:
+    json.dump(followup_output, file, indent=4)
+
+
+#DAY 35
+from parsers.aptitude_engine import *
+answer = """
+First I would identify the issue,
+analyze logs,
+implement the fix,
+and verify the result.
+"""
+logical = logical_score(answer)
+clarity = problem_solving_clarity(answer)
+aptitude_report = build_aptitude_report(
+    logical,
+    clarity
+)
+print(aptitude_report)
+with open("outputs/aptitude_report.json", "w") as file:
+    json.dump(aptitude_report, file, indent=4)
+
+
+
+#DAYY 36
+from parsers.confidence_analyzer import *
+candidate_response = """
+I think I worked with Python.
+Maybe I can solve this problem.
+"""
+confidence_report = build_confidence_object(candidate_response)
+print(confidence_report)
+with open("outputs/confidence_report.json", "w") as file:
+    json.dump(confidence_report, file, indent=4)
+
+
+#DAY 37
+from parsers.communication_evaluator import *
+candidate_response = """
+I have worked on Django projects and developed REST APIs using Python.
+"""
+communication_report = build_communication_report(candidate_response)
+print(communication_report)
+with open("outputs/communication_report.json", "w") as file:
+    json.dump(communication_report, file, indent=4)
+
+
+#DAY 38
+from parsers.unified_scoring_engine import *
+candidate_id = "C001"
+role = "python developer"
+ats_score = candidate_score
+screening_score = 92.5
+hr_score = 88.0
+candidate_report = build_candidate_object(
+    candidate_id,
+    role,
+    ats_score,
+    screening_score,
+    hr_score
+)
+print(candidate_report)
+with open("outputs/unified_candidate_report.json", "w") as file:
+    json.dump(candidate_report, file, indent=4)
+
+
+
+#DAY 39
+from parsers.interview_summary import *
+candidate_id = "C001"
+hr_score = 88
+communication_score = communication_report["communication_score"]
+confidence_score = confidence_report["behavioral_confidence_score"]
+consistency_score = 92
+summary = build_summary(
+    candidate_id,
+    hr_score,
+    communication_score,
+    confidence_score,
+    consistency_score
+)
+print(summary["report"])
+with open("outputs/interview_summary.json", "w") as file:
+    json.dump(summary, file, indent=4)
+
+
+#DAY 42
+from parsers.system_optimizer import *
+ai_result = "Hire"
+manual_result = "Hire"
+prediction_status = evaluate_prediction(ai_result,manual_result)
+followup_validation = validate_followup(candidate_answer)
+normalized_score = normalize_score(candidate_score)
+cleaned_answer = clean_transcript(candidate_answer)
+optimization_report = build_optimization_report()
+
+print("Prediction Validation :", prediction_status)
+print("Follow-up Validation  :", followup_validation)
+print("Normalized Score      :", normalized_score)
+print("Cleaned Transcript    :", cleaned_answer)
+print("\nOptimization Report")
+
+for key, value in optimization_report.items():
+    print(f"{key}: {value}")
+system_optimizer_output = {
+    "prediction_validation": prediction_status,
+    "followup_validation": followup_validation,
+    "normalized_score": normalized_score,
+    "cleaned_transcript": cleaned_answer,
+    "optimization_report": optimization_report
+}
+
+with open("outputs/system_optimizer_output.json", "w") as file:
+    json.dump(system_optimizer_output, file, indent=4)
+
+
+#DAY 43
+from parsers.ethics_review import *
+consent = check_consent()
+fairness = fairness_review(
+    candidate_score,
+    fair_ats_score
+)
+candidate_data = {
+    "name": "Arjun Menon",
+    "gender": "Male",
+    "age": 24,
+    "religion": "None",
+    "nationality": "Indian",
+    "marital_status": "Single",
+    "skills": ["Python", "Django", "SQL"]
+}
+
+bias_free_data = remove_bias(candidate_data)
+score_explanation = explain_score()
+retention = retention_policy()
+ethics_report = build_ethics_report()
+print("Consent:")
+print(consent)
+print("\nFairness Review:")
+print(fairness)
+print("\nBias-Free Candidate Data:")
+print(bias_free_data)
+print("\nScore Explainability:")
+print(score_explanation)
+print("\nRetention Policy:")
+print(retention)
+print("\nComplete Ethics Report:")
+print(ethics_report)
+ethics_output = {
+    "consent": consent,
+    "fairness_review": fairness,
+    "bias_free_candidate": bias_free_data,
+    "score_explanation": score_explanation,
+    "retention_policy": retention,
+    "ethics_report": ethics_report
+}
+
+with open("outputs/ethics_review_output.json", "w") as file:
+    json.dump(ethics_output, file, indent=4)
+
+
+
+#DAY 47
+from parsers.technical_scoring_engine import *
+technical_answer = """
+First I analyzed the issue.
+Because the API was slow,
+I optimized SQL queries
+and deployed the fix
+in production.
+"""
+
+accuracy = accuracy_score(True)
+depth = depth_score(technical_answer)
+reasoning = reasoning_score(technical_answer)
+real_world = real_world_score(technical_answer)
+
+technical_report = build_technical_report(
+    accuracy,
+    depth,
+    reasoning,
+    real_world
+)
+
+difficulty = "intermediate"
+technical_report["answer_quality"] = answer_quality(technical_answer)
+technical_report["normalized_score"] = normalize_score(
+    technical_report["technical_score"],
+    difficulty
+)
+print(technical_report)
+with open("outputs/technical_score_report.json", "w") as file:
+    json.dump(technical_report, file, indent=4)
+
+#DAY 48
+from parsers.behavioral_mapper import *
+signal = "stable_gaze"
+insight = behavioral_insight(signal)
+focus = 0.90
+attention = 0.80
+engagement = 0.80
+behavior_score = behavioral_score(
+    focus,
+    attention,
+    engagement
+)
+
+behavior_report = {
+    "candidate_id": "C001",
+    "signal": signal,
+    "behavioral_insight": insight,
+    "focus": focus,
+    "attention": attention,
+    "engagement": engagement,
+    "behavioral_score": behavior_score
+}
+
+print(behavior_report)
+
+with open("outputs/behavioral_report.json", "w") as file:
+    json.dump(behavior_report, file, indent=4)
+
+
+# DAY 49
+from parsers.integrity_detector import *
+events = [
+    "tab_switching",
+    "looking_away",
+    "external_voice",
+    "looking_away"
+]
+integrity_score = pattern_recognition(events)
+integrity_report = build_integrity_report(
+    "C001",
+    integrity_score
+)
+print("Interview Events:")
+print(events)
+print("\nIntegrity Report:")
+print(integrity_report)
+with open("outputs/integrity_report.json", "w") as file:
+    json.dump(integrity_report, file, indent=4)
+
+
+# ==========================================================
+# DAY 50 - MACHINE TEST EVALUATOR
+# ==========================================================
+
+from parsers.machine_test_evaluator import *
+
+print("\n================ DAY 50 : MACHINE TEST EVALUATOR ================\n")
+
+# Candidate Submission
+candidate_id = "C001"
+
+code_snapshot = """
+def add(a, b):
+    return a + b
+"""
+
+execution_result = "Success"
+
+submission = build_submission_object(
+    candidate_id,
+    code_snapshot,
+    execution_result
+)
+
+# Machine Test Evaluation
+correctness = 1.0
+efficiency = 0.80
+code_quality = 0.90
+problem_solving = 0.85
+
+machine_test_score = calculate_machine_test_score(
+    correctness,
+    efficiency,
+    code_quality,
+    problem_solving
+)
+
+time_taken = 42
+
+machine_test_report = build_machine_test_report(
+    candidate_id,
+    machine_test_score,
+    time_taken
+)
+
+print("Submission:")
+print(submission)
+
+print("\nMachine Test Report:")
+print(machine_test_report)
+
+machine_test_output = {
+    "submission": submission,
+    "report": machine_test_report
+}
+
+with open("outputs/machine_test_report.json", "w") as file:
+    json.dump(machine_test_output, file, indent=4)
+
+
+
+# DAY 50
+
+from parsers.machine_test_evaluator import *
+candidate_id = "C001"
+code_snapshot = """
+def add(a, b):
+    return a + b"""
+execution_result = "Success"
+submission = build_submission_object(
+    candidate_id,
+    code_snapshot,
+    execution_result
+)
+correctness = 1.0
+efficiency = 0.80
+code_quality = 0.90
+problem_solving = 0.85
+machine_test_score = calculate_machine_test_score(
+    correctness,
+    efficiency,
+    code_quality,
+    problem_solving
+)
+time_taken = 42
+machine_test_report = build_machine_test_report(
+    candidate_id,
+    machine_test_score,
+    time_taken
+)
+print("Submission:")
+print(submission)
+print("\nMachine Test Report:")
+print(machine_test_report)
+machine_test_output = {
+    "submission": submission,
+    "report": machine_test_report
+}
+with open("outputs/machine_test_report.json", "w") as file:
+    json.dump(machine_test_output, file, indent=4)
+
+
+#DAY 51
+
+from parsers.cross_round_aggregation import *
+candidate_id = "C001"
+role = "python developer"
+ats = candidate_score
+screening = screening_score
+hr = hr_score
+technical = technical_report["technical_score"]
+machine_test = machine_test_report["machine_test_score"]
+candidate_score_report = build_candidate_score(
+    candidate_id,
+    role,
+    ats,
+    screening,
+    hr,
+    technical,
+    machine_test
+)
+
+print(candidate_score_report)
+with open("outputs/hiring_fit_report.json", "w") as file:
+    json.dump(candidate_score_report, file, indent=4)
+
+
+# DAY 52
+from parsers.final_recommendation_ai import *
+candidate_id = "C001"
+hiring_fit_score = candidate_score_report["hiring_fit_score"]
+behavioral_score = behavior_report["behavioral_score"]
+integrity_score = integrity_report["integrity_score"]
+decision_report = build_decision_output(
+    candidate_id,
+    hiring_fit_score,
+    behavioral_score,
+    integrity_score
+)
+print(decision_report)
+with open("outputs/final_decision_output.json", "w") as file:
+    json.dump(decision_report, file, indent=4)
+
+
+
+# DAY 53
+from parsers.hiring_report_generator import *
+candidate_id = "C001"
+ats_score = candidate_score
+screening_score = screening_score
+hr_score = hr_score
+technical_score = technical_report["technical_score"]
+behavioral_score = behavior_report["behavioral_score"]
+integrity_score = integrity_report["integrity_score"]
+hiring_fit_score = candidate_score_report["hiring_fit_score"]
+confidence_score = decision_report["confidence_score"]
+hiring_report = build_hiring_report(
+    candidate_id,
+    ats_score,
+    screening_score,
+    hr_score,
+    technical_score,
+    behavioral_score,
+    integrity_score,
+    hiring_fit_score,
+    confidence_score
+)
+print(hiring_report)
+with open("outputs/hiring_intelligence_report.json", "w") as file:
+    json.dump(hiring_report, file, indent=4)
+
+

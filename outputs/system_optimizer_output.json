@@ -1,0 +1,13 @@
+{
+    "prediction_validation": "Correct",
+    "followup_validation": "Next Question",
+    "normalized_score": 90.66,
+    "cleaned_transcript": "i worked on a rese parser project using python.",
+    "optimization_report": {
+        "false_positive_reduction": true,
+        "followup_stability": true,
+        "score_normalization": true,
+        "processing_optimized": true,
+        "transcript_cleanup": true
+    }
+}
