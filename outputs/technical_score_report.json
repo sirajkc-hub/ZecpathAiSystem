@@ -1,0 +1,9 @@
+{
+    "accuracy_score": 1.0,
+    "depth_score": 0.5,
+    "reasoning_score": 0.4,
+    "real_world_score": 0.2,
+    "technical_score": 59.5,
+    "answer_quality": "Moderate",
+    "normalized_score": 56.52
+}

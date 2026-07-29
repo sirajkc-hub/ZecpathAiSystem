@@ -1,5 +1,13 @@
 {
-    "candidate_id": "C001",
-    "machine_test_score": 90.75,
-    "status": "Passed"
+    "submission": {
+        "candidate_id": "C001",
+        "code_snapshot": "\ndef add(a, b):\n    return a + b",
+        "execution_result": "Success"
+    },
+    "report": {
+        "candidate_id": "C001",
+        "machine_test_score": 90.75,
+        "time_taken": 42,
+        "status": "Passed"
+    }
 }

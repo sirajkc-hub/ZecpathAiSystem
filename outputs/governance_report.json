@@ -1,0 +1,52 @@
+{
+    "audit_log": {
+        "candidate_id": "C001",
+        "module": "ATS",
+        "action": "Score Generated",
+        "score": 88.35
+    },
+    "decision_log": {
+        "candidate_id": "C001",
+        "recommendation": "Selected",
+        "confidence": 0.95
+    },
+    "retention_policy": {
+        "resume": "180 days",
+        "transcripts": "180 days",
+        "reports": "365 days",
+        "logs": "365 days"
+    },
+    "consent": {
+        "resume_processing": true,
+        "interview_recording": true,
+        "ai_evaluation": true,
+        "data_storage": true
+    },
+    "secure_storage": {
+        "resume": "Encrypted Storage",
+        "transcripts": "Encrypted Storage",
+        "reports": "Encrypted Storage",
+        "audit_logs": "Secure Database"
+    },
+    "access_control": {
+        "role": "admin",
+        "permissions": [
+            "view",
+            "edit",
+            "delete"
+        ]
+    },
+    "governance_report": {
+        "audit_trail": true,
+        "decision_logging": true,
+        "consent_based_processing": true,
+        "secure_storage": true,
+        "retention_policy": {
+            "resume": "180 days",
+            "transcripts": "180 days",
+            "reports": "365 days",
+            "logs": "365 days"
+        },
+        "access_control": true
+    }
+}

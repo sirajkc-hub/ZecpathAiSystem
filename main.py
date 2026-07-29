@@ -642,3 +642,126 @@ with open("outputs/hiring_intelligence_report.json", "w") as file:
     json.dump(hiring_report, file, indent=4)
 
 
+# DAY 54
+from parsers.optimization_refinement import *
+import time
+start_time = time.time()
+predicted = [
+    "Hire",
+    "Reject",
+    "Hire",
+    "Review"
+]
+actual = [
+    "Hire",
+    "Hire",
+    "Reject",
+    "Review"
+]
+prediction_analysis = analyze_predictions(
+    predicted,
+    actual
+)
+
+refined_decision = refine_threshold(
+    candidate_score_report["hiring_fit_score"]
+)
+
+intent_result = detect_intent(
+    candidate_answer
+)
+
+consistency = consistency_check(
+    candidate_score,
+    technical_report["technical_score"],
+    hr_score
+)
+
+execution_time = processing_speed(
+    start_time
+)
+
+optimization_report = build_optimization_report()
+
+print("Prediction Analysis:")
+print(prediction_analysis)
+
+print("\nRefined Decision:")
+print(refined_decision)
+
+print("\nIntent Detection:")
+print(intent_result)
+
+print("\nConsistency Check:")
+print(consistency)
+
+print("\nProcessing Time:")
+print(execution_time, "seconds")
+
+print("\nOptimization Report:")
+print(optimization_report)
+
+optimization_output = {
+    "prediction_analysis": prediction_analysis,
+    "refined_decision": refined_decision,
+    "intent_detection": intent_result,
+    "consistency": consistency,
+    "processing_time_seconds": execution_time,
+    "optimization_report": optimization_report
+}
+
+with open("outputs/optimization_report.json", "w") as file:
+    json.dump(optimization_output, file, indent=4)
+
+
+#DAY 55
+from parsers.security_governance import *
+audit = audit_log(
+    "C001",
+    "ATS",
+    "Score Generated",
+    candidate_score
+)
+
+decision = decision_log(
+    "C001",
+    decision_report["recommendation"],
+    decision_report["confidence_score"]
+)
+
+governance = build_governance_report()
+
+print("Audit Log:")
+print(audit)
+
+print("\nDecision Log:")
+print(decision)
+
+print("\nRetention Policy:")
+print(retention_policy())
+
+print("\nConsent Verification:")
+print(verify_consent())
+
+print("\nSecure Storage:")
+print(storage_plan())
+
+print("\nAdmin Access:")
+print(access_control("admin"))
+
+print("\nGovernance Report:")
+print(governance)
+
+governance_output = {
+    "audit_log": audit,
+    "decision_log": decision,
+    "retention_policy": retention_policy(),
+    "consent": verify_consent(),
+    "storage": storage_plan(),
+    "access": access_control("admin"),
+    "governance_report": governance
+}
+
+with open("outputs/governance_report.json", "w") as file:
+    json.dump(governance_output, file, indent=4)
+

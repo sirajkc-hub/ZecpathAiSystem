@@ -1,7 +1,15 @@
 {
     "candidate_id": "C001",
-    "recommendation": "Selected",
-    "confidence_score": 0.95,
-    "risk_factors": []
+    "hiring_fit_score": 81.21,
+    "recommendation": "Hold / Review",
+    "confidence_score": 0.8,
+    "risk_factors": [
+        "Integrity Risk"
+    ],
+    "explanation": {
+        "Hiring Fit": "Cross-round aggregated score",
+        "Behavior": "Behavioral analysis",
+        "Integrity": "Interview integrity",
+        "Confidence": "Decision confidence level"
+    }
 }
-

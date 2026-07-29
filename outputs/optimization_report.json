@@ -1,6 +1,22 @@
 {
-    "accuracy_improved": true,
-    "false_positive_reduction": true,
-    "false_negative_reduction": true,
-    "processing_optimized": true
+    "prediction_analysis": {
+        "false_positive": 1,
+        "false_negative": 1
+    },
+    "refined_decision": "Hire",
+    "intent_detection": {
+        "intent_score": 0,
+        "intent_detected": false
+    },
+    "consistency": "Needs Review",
+    "processing_time_seconds": 0.0,
+    "optimization_report": {
+        "accuracy_improved": true,
+        "false_positive_reduction": true,
+        "false_negative_reduction": true,
+        "threshold_refined": true,
+        "intent_detection": true,
+        "cross_round_consistency": true,
+        "processing_optimized": true
+    }
 }

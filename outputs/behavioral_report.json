@@ -1,11 +1,9 @@
 {
     "candidate_id": "C001",
-
-    "focus_level": "High",
-
-    "attention": "Good",
-
-    "behavioral_score": 85.25,
-
-    "insight": "Candidate maintained good focus throughout the interview."
+    "signal": "stable_gaze",
+    "behavioral_insight": "High Focus",
+    "focus": 0.9,
+    "attention": 0.8,
+    "engagement": 0.8,
+    "behavioral_score": 84.0
 }

@@ -1,0 +1,52 @@
+{
+    "consent": {
+        "resume_processing": true,
+        "interview_recording": true,
+        "data_storage": true,
+        "ai_evaluation": true
+    },
+    "fairness_review": {
+        "original_score": 90.66,
+        "fair_score": 90.66,
+        "difference": 0.0
+    },
+    "bias_free_candidate": {
+        "name": "Arjun Menon",
+        "skills": [
+            "Python",
+            "Django",
+            "SQL"
+        ]
+    },
+    "score_explanation": {
+        "ATS": "Resume-job matching",
+        "Screening": "Interview response quality",
+        "HR": "Communication and confidence",
+        "Unified": "Weighted final hiring score"
+    },
+    "retention_policy": {
+        "resume": "180 days",
+        "interview": "180 days",
+        "reports": "365 days"
+    },
+    "ethics_report": {
+        "consent": {
+            "resume_processing": true,
+            "interview_recording": true,
+            "data_storage": true,
+            "ai_evaluation": true
+        },
+        "bias_removed": true,
+        "explainability": {
+            "ATS": "Resume-job matching",
+            "Screening": "Interview response quality",
+            "HR": "Communication and confidence",
+            "Unified": "Weighted final hiring score"
+        },
+        "retention_policy": {
+            "resume": "180 days",
+            "interview": "180 days",
+            "reports": "365 days"
+        }
+    }
+}
