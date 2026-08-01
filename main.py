@@ -765,3 +765,93 @@ governance_output = {
 with open("outputs/governance_report.json", "w") as file:
     json.dump(governance_output, file, indent=4)
 
+
+
+#DAY 56
+from parsers.full_system_simulation import *
+resume = resume_stage()
+ats = ats_stage(candidate_score)
+screening = screening_stage(screening_score)
+hr = hr_stage(hr_score)
+technical = technical_stage(
+    technical_report["technical_score"]
+)
+final = final_stage(
+    decision_report["recommendation"]
+)
+comparison = compare_ai_human(
+    decision_report["recommendation"],
+    "Selected"      # Sample human decision
+)
+consistency = inconsistency_check(
+    candidate_score,
+    hr_score,
+    technical_report["technical_score"]
+)
+system_report = build_system_report()
+simulation_output = {
+    "resume_stage": resume,
+    "ats_stage": ats,
+    "screening_stage": screening,
+    "hr_stage": hr,
+    "technical_stage": technical,
+    "final_stage": final,
+    "ai_vs_human": comparison,
+    "consistency": consistency,
+    "system_report": system_report
+}
+print(simulation_output)
+with open("outputs/system_simulation_report.json", "w") as file:
+    json.dump(simulation_output, file, indent=4)
+
+
+
+#DAY 57
+
+from parsers.debugging_stabilization import *
+validated_score = validate_score(candidate_score)
+
+conversation_status = validate_conversation(
+    question,
+    candidate_answer
+)
+
+pipeline_status = validate_pipeline({
+    "candidate_id": "C001",
+    "ats_score": candidate_score,
+    "technical_score": technical_report["technical_score"],
+    "recommendation": decision_report["recommendation"]
+})
+
+division_result = safe_division(10, 0)
+
+api_status = validate_api_output(decision_report)
+
+edge_case = edge_case_check({
+    "candidate_id": "C001",
+    "ats_score": candidate_score
+})
+
+debug_report = build_debug_report()
+
+print("Validated Score:", validated_score)
+print("Conversation:", conversation_status)
+print("Pipeline Missing Fields:", pipeline_status)
+print("Safe Division:", division_result)
+print("API Validation:", api_status)
+print("Edge Case:", edge_case)
+print("Debug Report:", debug_report)
+
+debug_output = {
+    "validated_score": validated_score,
+    "conversation_status": conversation_status,
+    "pipeline_validation": pipeline_status,
+    "safe_division": division_result,
+    "api_validation": api_status,
+    "edge_case": edge_case,
+    "debug_report": debug_report
+}
+
+with open("outputs/debugging_report.json", "w") as file:
+    json.dump(debug_output, file, indent=4)
+

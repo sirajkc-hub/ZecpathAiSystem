@@ -1,0 +1,47 @@
+{
+    "resume_stage": {
+        "stage": "Resume Upload",
+        "status": "Completed"
+    },
+    "ats_stage": {
+        "stage": "ATS Scoring",
+        "score": 88.35,
+        "status": "Completed"
+    },
+    "screening_stage": {
+        "stage": "Screening",
+        "score": 86,
+        "status": "Completed"
+    },
+    "hr_stage": {
+        "stage": "HR Interview",
+        "score": 84,
+        "status": "Completed"
+    },
+    "technical_stage": {
+        "stage": "Technical Interview",
+        "score": 91,
+        "status": "Completed"
+    },
+    "final_stage": {
+        "stage": "Final Decision",
+        "recommendation": "Selected",
+        "status": "Completed"
+    },
+    "ai_vs_human": {
+        "ai_decision": "Selected",
+        "human_decision": "Selected",
+        "match": true
+    },
+    "consistency": true,
+    "system_report": {
+        "pipeline_completed": true,
+        "resume_processed": true,
+        "ats_completed": true,
+        "screening_completed": true,
+        "hr_completed": true,
+        "technical_completed": true,
+        "final_decision_generated": true,
+        "system_status": "Success"
+    }
+}
