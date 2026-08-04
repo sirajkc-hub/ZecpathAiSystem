@@ -1,0 +1,9 @@
+
+{
+    "api_defined": true,
+    "request_schema": true,
+    "response_schema": true,
+    "async_sync_defined": true,
+    "retry_mechanism": true,
+    "security_planned": true
+}
